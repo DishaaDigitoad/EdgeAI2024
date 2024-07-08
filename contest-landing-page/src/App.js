@@ -1,8 +1,8 @@
-import "./App.css";
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Content from "./components/Content";
+import Footer from "./components/Footer";
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
@@ -13,6 +13,7 @@ function App() {
         toggleSidebar={() => setSidebarOpen(!sidebarOpen)}
       />
       <Content />
+      <Footer />
     </div>
   );
 }

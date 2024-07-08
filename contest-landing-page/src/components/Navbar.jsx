@@ -2,9 +2,9 @@ import React from "react";
 
 const Navbar = ({ toggleSidebar }) => {
   return (
-    <nav className="fixed w-full bg-white shadow-md z-10">
+    <nav className="fixed backdrop-blur-lg w-full z-10 border-b border-neutral-700/80">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-lg font-bold">Logo</div>
+        <div className="text-lg font-bold ">Logo</div>
         <div className="hidden md:flex space-x-4">
           {[
             "About",

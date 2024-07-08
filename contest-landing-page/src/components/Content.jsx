@@ -1,38 +1,20 @@
 import React from "react";
-import Timeline from "./pages/timeline/Timeline";
 import Hero from "./pages/Hero";
-import DigiLogo from "../assets/DigiLogo.jpg";
+import About from "./pages/About";
+import Program from "./pages/Program";
+import Timeline from "./pages/timeline/Timeline";
+import Partners from "./pages/Partners";
+import Faq from "./pages/Faq";
 
 const sections = [
+  { id: "about", title: "About Us" },
+
   {
-    id: "about",
-    title: "About Us",
-    content: (
-      <>
-        <img
-          src={DigiLogo}
-          alt="DigiToad Technologies logo"
-          className="w-full max-w-md h-auto mb-4 rounded"
-          loading="lazy"
-        />
-        <p>
-          "Since our establishment in 2018, DigiToad Technologies has emerged as
-          a leading provider of customized solutions in Automated Test and
-          Measurement, Real-Time Monitoring and Control, Data Acquisition and
-          Analysis Tools & Industrial Automation. Our collaborative efforts span
-          across industries such as Automotive, Energy, Aerospace,
-          Semiconductor, Wireless, and Academic Research, ensuring tailored
-          engineering solutions to meet your unique needs."
-        </p>
-      </>
-    ),
+    id: "program",
+    title: "Program",
   },
-  {
-    id: "timeline",
-    title: "Timeline",
-  },
-  { id: "program", title: "Program", content: "This is the program section." },
-  { id: "faq", title: "FAQ", content: "This is the FAQ section." },
+  { id: "timeline", title: "Timeline" },
+  { id: "faq", title: "FAQ" },
   {
     id: "partners",
     title: "Partners",
@@ -48,12 +30,24 @@ const sections = [
 
 const Content = () => {
   return (
-    <div className="pt-16 bg-gray-100">
+    <div className="pt-16">
       <Hero />
-      <div className="container mx-auto px-4 space-y-8">
+      <div className="container mx-auto px-4 space-y-8 rounded">
         {sections.map((section) => {
           if (section.id === "timeline") {
             return <Timeline key={section.id} />;
+          }
+          if (section.id === "about") {
+            return <About key={section.id} />;
+          }
+          if (section.id === "faq") {
+            return <Faq key={section.id} />;
+          }
+          if (section.id === "program") {
+            return <Program key={section.id} />;
+          }
+          if (section.id === "partners") {
+            return <Partners key={section.id} />;
           }
           return (
             <div
