@@ -1,3 +1,9 @@
+import STM from "./assets/STM.png";
+import NI from "./assets/NI.png";
+import Digilent from "./assets/Digilent.png";
+import IS from "./assets/IS.png";
+import VT from "./assets/VT.png";
+
 export const faqs = [
   {
     question:
@@ -30,13 +36,12 @@ export const faqs = [
 ];
 
 export const partners = [
-  { name: "Company 1", logo: "path/to/logo1.png" },
-  { name: "Company 2", logo: "path/to/logo2.png" },
-  { name: "Company 3", logo: "path/to/logo3.png" },
-  { name: "Company 4", logo: "path/to/logo4.png" },
-  { name: "Company 5", logo: "path/to/logo5.png" },
+  { logo: STM },
+  { logo: NI },
+  { logo: Digilent },
+  { logo: IS },
+  { logo: VT },
 ];
-
 export const contestInfo = [
   {
     title: "Edge AI Design Contest 2024",

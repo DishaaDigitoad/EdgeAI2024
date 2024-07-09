@@ -58,7 +58,7 @@ const Footer = () => {
             <h2 className="text-lg font-semibold">Follow Us</h2>
             <div className="mt-2 flex space-x-6">
               <a
-                href="https://www.linkedin.com/company/digitoad-technologies/"
+                href="https://www.facebook.com/profile.php?id=61561178292994"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline transition-transform transform hover:scale-125 duration-300"
@@ -108,7 +108,7 @@ const Footer = () => {
                 &copy; 2024 Edge AI Contest. All rights reserved.
               </p>
             </div>
-            <div className="flex space-x-4 mt-4 md:mt-0">
+            <div className="mt-4 md:mt-0 grid grid-cols-2 gap-2 sm:grid-cols-3">
               <a href="/privacy" className="hover:underline">
                 Privacy Policy
               </a>
@@ -116,7 +116,7 @@ const Footer = () => {
                 Terms of Service
               </a>
               <a href="/contest-terms" className="hover:underline">
-                Contest Terms & Conditions
+                Terms & Conditions
               </a>
             </div>
           </div>

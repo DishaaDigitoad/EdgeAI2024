@@ -1,43 +1,23 @@
 import React from "react";
+import { partners } from "../../Data";
 
 const Partners = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-        {/* Partner 1 */}
-        <div className="bg-white shadow-md rounded-lg p-4">
-          <h3 className="text-lg font-semibold mb-2">ST Microelectronics</h3>
-          <p className="text-gray-700">Description of Company 1</p>
-        </div>
-
-        {/* Partner 2 */}
-        <div className="bg-white shadow-md rounded-lg p-4">
-          <h3 className="text-lg font-semibold mb-2">National Instruments</h3>
-          <p className="text-gray-700">Description of Company 2</p>
-        </div>
-
-        {/* Partner 3 */}
-        <div className="bg-white shadow-md rounded-lg p-4">
-          <h3 className="text-lg font-semibold mb-2">
-            Digilent (An NI Company)
-          </h3>
-          <p className="text-gray-700">Description of Company 3</p>
-        </div>
-
-        {/* Partner 4 */}
-        <div className="bg-white shadow-md rounded-lg p-4">
-          <h3 className="text-lg font-semibold mb-2">Industrial Shields</h3>
-          <p className="text-gray-700">Description of Company 4</p>
-        </div>
-
-        {/* Partner 5 */}
-        <div className="bg-white shadow-md rounded-lg p-4">
-          <h3 className="text-lg font-semibold mb-2">Vedhya Technologies</h3>
-          <p className="text-gray-700">Description of Company 5</p>
-        </div>
+      <h2 className="text-2xl font-semibold text-center mb-8">Our Partners</h2>
+      <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-8 justify-items-center">
+        {partners.map((partner, index) => (
+          <div key={index} className="flex flex-col items-center">
+            <img
+              src={partner.logo}
+              alt={`Partner ${index + 1}`}
+              className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 mb-4 object-contain"
+              loading="lazy"
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
 };
-
 export default Partners;
