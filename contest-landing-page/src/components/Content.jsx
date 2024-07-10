@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "./pages/Hero";
 import About from "./pages/About";
-import Program from "./pages/Program";
+import ProblemStatement from "./pages/ProblemStatement";
 import Timeline from "./pages/timeline/Timeline";
 import Partners from "./pages/Partners";
 import Faq from "./pages/Faq";
@@ -10,8 +10,8 @@ const sections = [
   { id: "about", title: "About Us" },
 
   {
-    id: "program",
-    title: "Program",
+    id: "problemstatement",
+    title: "ProblemStatement",
   },
   { id: "timeline", title: "Timeline" },
   { id: "faq", title: "FAQ" },
@@ -19,12 +19,6 @@ const sections = [
     id: "partners",
     title: "Partners",
     content: "This is the partners section.",
-  },
-  { id: "contact", title: "Contact", content: "This is the contact section." },
-  {
-    id: "register-now",
-    title: "Register Now",
-    content: "This is the register now section.",
   },
 ];
 
@@ -43,11 +37,12 @@ const Content = () => {
           if (section.id === "faq") {
             return <Faq key={section.id} />;
           }
-          if (section.id === "program") {
-            return <Program key={section.id} />;
-          }
+
           if (section.id === "partners") {
             return <Partners key={section.id} />;
+          }
+          if (section.id === "problemstatement") {
+            return <ProblemStatement key={section.id} />;
           }
           return (
             <div

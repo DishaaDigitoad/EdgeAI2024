@@ -42,6 +42,35 @@ export const partners = [
   { logo: IS },
   { logo: VT },
 ];
+
+export const criteria = [
+  {
+    title: "ST Micro controller Board Selection:",
+    description:
+      "Teams must manually specify the type of ST board they have chosen to use for their project while registration.",
+  },
+  {
+    title: "Team Composition:",
+    description:
+      "Each team must consist of a minimum of 3 members and a maximum of 4 members.",
+  },
+  {
+    title: "Passion for Innovation:",
+    description:
+      "We encourage teams to demonstrate a passion for innovation in their proposed solutions and problem-solving approaches.",
+  },
+  {
+    title: "All Years of Engineering Students(UG/PG):",
+    description:
+      "The challenge is open to students from all years of engineering programs, fostering interdisciplinary collaboration and creativity.",
+  },
+  {
+    title: "Innovation Encouraged:",
+    description:
+      "Teams are encouraged to propose innovative and real-time problem-solving ideas that demonstrate the practical application of AI in industrial contexts.",
+  },
+];
+
 export const contestInfo = [
   {
     title: "Edge AI Design Contest 2024",

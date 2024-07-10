@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        beige: "#f5f5dc",
+        bone: "#F7FBF9",
       },
       fontFamily: {
         sans: ['"Roboto Serif"', "sans-serif"],

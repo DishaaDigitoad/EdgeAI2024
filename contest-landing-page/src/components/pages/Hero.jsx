@@ -1,11 +1,12 @@
 import React from "react";
+import Button from "./Button";
 // import { Swiper, SwiperSlide } from "swiper/react";
 // import "swiper/swiper-bundle.min.css";
 // import posterImage from "../../assets/Poster.png";
-
+import RegisterButton from "./Button";
 const Hero = () => {
   return (
-    <div>Hero section</div>
+    <Button text="Register Now" />
     // <Swiper
     //   spaceBetween={50}
     //   slidesPerView={3}
