@@ -6,6 +6,8 @@ module.exports = {
     extend: {
       colors: {
         bone: "#F7FBF9",
+        digiGreen: "#5ABB47",
+        darkBlue: "#1B263B",
       },
       fontFamily: {
         sans: ['"Roboto Serif"', "sans-serif"],

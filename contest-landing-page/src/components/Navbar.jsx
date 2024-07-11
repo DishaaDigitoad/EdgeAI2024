@@ -1,32 +1,34 @@
 import React from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = ({ toggleSidebar }) => {
   return (
-    <nav className="fixed backdrop-blur-lg w-full z-10 border-b border-neutral-700/80">
+    <nav className="fixed w-full z-20 bg-darkBlue bg-opacity-90">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-lg font-bold ">Logo</div>
-        <div className="hidden md:flex space-x-4">
+        <div className="flex-1 flex justify-center md:justify-center space-x-4">
           {[
-            "About",
-            "Timeline",
-            "Program",
-            "FAQ",
-            "Partners",
-            "Contact",
-            "Register Now",
+            { id: "about", title: "About Us" },
+            { id: "problemstatement", title: "Problem Statement" },
+            { id: "criteria", title: "Criteria" },
+            { id: "timeline", title: "Timeline" },
+            { id: "faq", title: "FAQ" },
+            { id: "partners", title: "Partners" },
           ].map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase().replace(" ", "-")}`}
-              className="hover:text-blue-500"
+            <ScrollLink
+              key={item.id}
+              to={item.id}
+              smooth={true}
+              duration={500}
+              className="cursor-pointer px-3 py-2 bg-dark-blue bg-opacity-50 rounded text-white hover:bg-opacity-75"
+              offset={-70} // Adjust this offset to account for the fixed navbar height
             >
-              {item}
-            </a>
+              {item.title}
+            </ScrollLink>
           ))}
         </div>
         <button className="md:hidden" onClick={toggleSidebar}>
           <svg
-            className="w-6 h-6"
+            className="w-6 h-6 text-white"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

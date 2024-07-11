@@ -1,24 +1,50 @@
-import React from "react";
-import Button from "./Button";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/swiper-bundle.min.css";
-// import posterImage from "../../assets/Poster.png";
-import RegisterButton from "./Button";
-const Hero = () => {
+import React, { useState } from "react";
+
+const Hero = ({ images }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
   return (
-    <Button text="Register Now" />
-    // <Swiper
-    //   spaceBetween={50}
-    //   slidesPerView={3}
-    //   navigation
-    //   pagination={{ clickable: true }}
-    //   scrollbar={{ draggable: true }}
-    // >
-    //   <SwiperSlide>Slide 1</SwiperSlide>
-    //   <SwiperSlide>Slide 2</SwiperSlide>
-    //   <SwiperSlide>Slide 3</SwiperSlide>
-    //   {/* Add more slides as needed */}
-    // </Swiper>
+    <div className="relative w-full h-[80vh] mx-auto mt-8 overflow-hidden">
+      <div
+        className="relative h-full flex transition-transform duration-500"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
+        {images.map((image, index) => (
+          <div key={index} className="flex-shrink-0 w-full h-full">
+            <img
+              src={image}
+              alt={`Slide ${index}`}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
+      </div>
+      <button
+        onClick={prevSlide}
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
+      >
+        &#10094;
+      </button>
+      <button
+        onClick={nextSlide}
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
+      >
+        &#10095;
+      </button>
+    </div>
   );
 };
+
 export default Hero;

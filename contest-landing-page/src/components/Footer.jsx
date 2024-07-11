@@ -31,8 +31,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Contest Details */}
-          <div className="mb-6 md:mb-0 w-full md:w-1/3">
+          {/* <div className="mb-6 md:mb-0 w-full md:w-1/3">
             <h2 className="text-lg font-semibold">Contest Info</h2>
             <ul className="mt-2">
               <li>
@@ -51,7 +50,7 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Social Media Links */}
           <div className="mb-6 md:mb-0 w-full md:w-1/3">
@@ -101,7 +100,10 @@ const Footer = () => {
         <div className="mt-8 border-t border-gray-700 pt-4">
           <div className="flex flex-col md:flex-row justify-between">
             <div>
-              <a href="/" className="text-lg font-semibold hover:underline">
+              <a
+                href="https://www.digitoadtech.com/"
+                className="text-lg font-semibold hover:underline"
+              >
                 DigiToad Technologies pvt. ltd.
               </a>
               <p className="mt-2">
@@ -109,12 +111,12 @@ const Footer = () => {
               </p>
             </div>
             <div className="mt-4 md:mt-0 grid grid-cols-2 gap-2 sm:grid-cols-3">
-              <a href="/privacy" className="hover:underline">
+              {/* <a href="/privacy" className="hover:underline">
                 Privacy Policy
               </a>
               <a href="/terms" className="hover:underline">
                 Terms of Service
-              </a>
+              </a> */}
               <a href="/contest-terms" className="hover:underline">
                 Terms & Conditions
               </a>

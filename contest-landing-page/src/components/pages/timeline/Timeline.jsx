@@ -1,91 +1,38 @@
 import React from "react";
-import moment from "moment";
+import { contestFlow } from "../../../Data";
 
 const Timeline = () => {
-  const stages = [
-    {
-      id: 1,
-      startDate: "2024-06-01",
-      endDate: "2024-06-30",
-      description: "Stage 1",
-    },
-    {
-      id: 2,
-      startDate: "2024-05-01",
-      endDate: "2024-08-31",
-      description: "Stage 2",
-    },
-    {
-      id: 3,
-      startDate: "2024-08-01",
-      endDate: "2024-08-31",
-      description: "Stage 3",
-    },
-  ];
-  const today = moment();
-  const formatDate = (date) => moment(date).format("MMMM YYYY");
-
-  const getStatus = (startDate, endDate) => {
-    const startMoment = moment(startDate);
-    const endMoment = moment(endDate);
-
-    if (endMoment.isBefore(today, "day")) {
-      return "completed";
-    } else if (
-      startMoment.isSameOrBefore(today, "day") &&
-      endMoment.isSameOrAfter(today, "day")
-    ) {
-      return "active";
-    } else {
-      return "upcoming";
-    }
-  };
-
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="relative">
-        {stages.map((stage) => (
-          <div
-            key={stage.id}
-            className={`flex items-center mb-4 ${
-              getStatus(stage.startDate, stage.endDate) === "active"
-                ? "text-blue-600"
-                : "text-gray-500"
-            }`}
-          >
-            <div
-              className={`w-10 h-10 flex items-center justify-center rounded-full bg-${
-                getStatus(stage.startDate, stage.endDate) === "completed"
-                  ? "green"
-                  : getStatus(stage.startDate, stage.endDate) === "active"
-                  ? "blue"
-                  : "gray"
-              }-500 text-white`}
-            >
-              {getStatus(stage.startDate, stage.endDate) === "completed" ? (
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
-              ) : (
-                stage.id
+    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+      <h2 className="text-3xl font-bold text-center mb-8 text-green-500">
+        Contest Flow
+      </h2>
+      <div className="relative border-l border-gray-200 pl-6 space-y-12 overflow-x-auto">
+        {contestFlow.map((stage, index) => (
+          <div key={index} className="relative mb-8">
+            <div className="absolute -left-4 top-0 w-8 h-8 bg-green-500 rounded-full border-4 border-white"></div>
+            <div className="ml-10 p-4 bg-gray-100 rounded-lg shadow-md">
+              <h3 className="text-2xl font-semibold mb-2 text-gray-700">
+                {stage.stage}
+              </h3>
+              {stage.startDate && (
+                <p className="text-gray-600">
+                  <span className="font-semibold">Start Date:</span>{" "}
+                  {stage.startDate}
+                </p>
               )}
-            </div>
-            <div className="ml-4">
-              <div className="font-bold">
-                {formatDate(stage.startDate)} - {formatDate(stage.endDate)}
-              </div>
-              <div className="text-gray-700">{stage.description}</div>
+              {stage.endDate && (
+                <p className="text-gray-600">
+                  <span className="font-semibold">End Date:</span>{" "}
+                  {stage.endDate}
+                </p>
+              )}
+              {stage.date && (
+                <p className="text-gray-600">
+                  <span className="font-semibold">Date:</span> {stage.date}
+                </p>
+              )}
+              <p className="text-gray-600 mt-4">{stage.outcomes}</p>
             </div>
           </div>
         ))}

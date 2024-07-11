@@ -3,6 +3,7 @@ import NI from "./assets/NI.png";
 import Digilent from "./assets/Digilent.png";
 import IS from "./assets/IS.png";
 import VT from "./assets/VT.png";
+import Landscape from "./assets/landscapesky.jpg";
 
 export const faqs = [
   {
@@ -43,6 +44,8 @@ export const partners = [
   { logo: VT },
 ];
 
+export const images = [Landscape, Landscape, Landscape];
+
 export const criteria = [
   {
     title: "ST Micro controller Board Selection:",
@@ -71,10 +74,25 @@ export const criteria = [
   },
 ];
 
-export const contestInfo = [
+export const contestFlow = [
   {
-    title: "Edge AI Design Contest 2024",
-    description:
-      "Join us in our inaugural Edge AI Innovation Challenge, where teams harness the power of ST Micro controller boards to develop groundbreaking solutions integrating embedded Artificial Intelligence. Spanning multiple stages from proposal submissions to prototype development and technical presentations, this challenge aims to foster innovation and showcase the practical applications of AI in diverse industrial contexts. Certificates will be issued to participants at each stage of the competition, recognizing their achievements and contributions to advancing Edge AI technology.",
+    stage: "Stage 1: Proposal on Problem Statement",
+    startDate: "July 20th, 2024",
+    endDate: "August 5th, 2024",
+    outcomes:
+      "Participants will submit detailed project proposals that include abstract methodologies, relevance to Edge AI, and potential impact. The selection process will identify the top-notch proposals based on originality, relevance to Edge AI, and potential impact.",
+  },
+  {
+    stage: "Stage 2: Development of Initial Prototypes and Presentation",
+    startDate: "August 15th, 2024",
+    endDate: "September 30th, 2024",
+    outcomes:
+      "The shortlisted teams from Stage 1 will embark on developing initial prototypes. Assessment will focus on evaluating the progress and functionality of these prototypes, narrowing down to the top teams based on initial evaluations. The top teams will then proceed to deliver detailed online presentations showcasing their prototypes and technical approaches. Evaluation criteria will include project-based technical content, innovation, problem-solving approach, and application potential.",
+  },
+  {
+    stage: "Stage 3: Submission of Polished Final Prototypes",
+    date: "October 2024",
+    outcomes:
+      "Teams will submit polished final versions of their prototypes along with detailed reports. The final evaluation will determine the top 10 teams based on prototype performance and innovation. Winners will be announced, and awards and recognition will be distributed to the top teams for their achievements in advancing Edge AI solutions.",
   },
 ];
