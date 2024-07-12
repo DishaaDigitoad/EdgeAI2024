@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "./pages/Hero";
+import Button from "./pages/Button";
 import About from "./pages/About";
 import ProblemStatement from "./pages/ProblemStatement";
 import Criteria from "./pages/Criteria";
@@ -21,47 +22,56 @@ const sections = [
 
 const Content = () => {
   return (
-    <div>
+    <>
       <Hero images={images} />
       <div className="container mx-auto px-4 space-y-8 rounded">
-        {sections.map((section, index) => (
-          <React.Fragment key={section.id}>
-            {section.id === "about" && (
-              <div id="about">
-                <About />
-              </div>
-            )}
-            {section.id === "criteria" && (
-              <div id="criteria">
-                <Criteria />
-              </div>
-            )}
-            {section.id === "timeline" && (
-              <div id="timeline">
-                <Timeline />
-              </div>
-            )}
-            {section.id === "faq" && (
-              <div id="faq">
-                <Faq />
-              </div>
-            )}
-            {section.id === "partners" && (
-              <div id="partners">
-                <Partners />
-              </div>
-            )}
-            {section.id === "problemstatement" && (
-              <ParallaxSection image={skybg}>
-                <div id="problemstatement">
-                  <ProblemStatement />
+        <div className="flex justify-center mt-4">
+          <Button
+            text="Register now"
+            link="https://forms.gle/GeCCGATNAbi8ke728"
+            className="justify-center"
+          />
+        </div>
+        <div className="container mx-auto px-4 space-y-8 rounded">
+          {sections.map((section, index) => (
+            <React.Fragment key={section.id}>
+              {section.id === "about" && (
+                <div id="about">
+                  <About />
                 </div>
-              </ParallaxSection>
-            )}
-          </React.Fragment>
-        ))}
+              )}
+              {section.id === "criteria" && (
+                <div id="criteria">
+                  <Criteria />
+                </div>
+              )}
+              {section.id === "timeline" && (
+                <div id="timeline">
+                  <Timeline />
+                </div>
+              )}
+              {section.id === "faq" && (
+                <div id="faq">
+                  <Faq />
+                </div>
+              )}
+              {section.id === "partners" && (
+                <div id="partners">
+                  <Partners />
+                </div>
+              )}
+              {section.id === "problemstatement" && (
+                <ParallaxSection image={skybg}>
+                  <div id="problemstatement">
+                    <ProblemStatement />
+                  </div>
+                </ParallaxSection>
+              )}
+            </React.Fragment>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -13,7 +13,7 @@ const Partners = () => {
             <img
               src={partner.logo}
               alt={`Partner ${index + 1}`}
-              className="w-13 h-13 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-25 lg:h-25 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 mb-4 object-contain"
+              className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-25 lg:h-25 xl:w-30 xl:h-30 2xl:w-32 2xl:h-32 mb-4 object-contain"
               loading="lazy"
             />
           </div>
