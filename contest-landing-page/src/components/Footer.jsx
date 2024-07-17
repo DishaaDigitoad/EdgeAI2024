@@ -15,7 +15,7 @@ const Footer = () => {
           {/* Company Information */}
           <div className="mb-6 md:mb-0 w-full md:w-1/3">
             <h2 className="text-lg font-semibold">Contact Us</h2>
-            <p className="mt-2">
+            <p className="mt-2 text-sm">
               DIGITOAD TECHNOLOGIES PVT. LTD.
               <br />
               AB square, #617, 1st Floor, 5th main,
@@ -24,33 +24,12 @@ const Footer = () => {
               <br />
               Karnataka (India)
               <br />
-              <hr />
+              <br />
               Email: sales@digitoadtech.com
               <br />
               Phone: +91 636 238 7840
             </p>
           </div>
-
-          {/* <div className="mb-6 md:mb-0 w-full md:w-1/3">
-            <h2 className="text-lg font-semibold">Contest Info</h2>
-            <ul className="mt-2">
-              <li>
-                <a href="/rules" className="hover:underline">
-                  Contest Rules
-                </a>
-              </li>
-              <li>
-                <a href="/faq" className="hover:underline">
-                  FAQ
-                </a>
-              </li>
-              <li>
-                <a href="/contact" className="hover:underline">
-                  Contest Queries
-                </a>
-              </li>
-            </ul>
-          </div> */}
 
           {/* Social Media Links */}
           <div className="mb-6 md:mb-0 w-full md:w-1/3">
@@ -64,7 +43,7 @@ const Footer = () => {
               >
                 <FontAwesomeIcon
                   icon={faFacebook}
-                  className="text-blue-600"
+                  className="text-blue-600 shadow-lg"
                   size="3x"
                 />
               </a>
@@ -76,7 +55,7 @@ const Footer = () => {
               >
                 <FontAwesomeIcon
                   icon={faLinkedin}
-                  className="text-blue-700"
+                  className="text-blue-700 shadow-lg"
                   size="3x"
                 />
               </a>
@@ -88,7 +67,7 @@ const Footer = () => {
               >
                 <FontAwesomeIcon
                   icon={faInstagram}
-                  className="text-pink-500"
+                  className="text-pink-500 shadow-lg"
                   size="3x"
                 />
               </a>
@@ -97,11 +76,13 @@ const Footer = () => {
         </div>
 
         {/* Legal Information and Branding */}
-        <div className="mt-8 border-t border-gray-700 pt-4">
+        <div className="mt-8 border-t border-gray-700 pt-4 text-sm">
           <div className="flex flex-col md:flex-row justify-between">
             <div>
               <a
                 href="https://www.digitoadtech.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-lg font-semibold hover:underline"
               >
                 DigiToad Technologies pvt. ltd.
@@ -109,17 +90,6 @@ const Footer = () => {
               <p className="mt-2">
                 &copy; 2024 Edge AI Contest. All rights reserved.
               </p>
-            </div>
-            <div className="mt-4 md:mt-0 grid grid-cols-2 gap-2 sm:grid-cols-3">
-              {/* <a href="/privacy" className="hover:underline">
-                Privacy Policy
-              </a>
-              <a href="/terms" className="hover:underline">
-                Terms of Service
-              </a> */}
-              <a href="/contest-terms" className="hover:underline">
-                Terms & Conditions
-              </a>
             </div>
           </div>
         </div>

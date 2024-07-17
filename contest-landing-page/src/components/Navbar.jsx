@@ -14,7 +14,6 @@ const Navbar = ({ toggleSidebar }) => {
         <div className="container mx-auto px-4 py-1 flex justify-between items-center">
           <div className="flex-1 flex justify-center md:justify-center space-x-4">
             {[
-              { id: "about", title: "About Us" },
               { id: "problemstatement", title: "Problem Statement" },
               { id: "criteria", title: "Criteria" },
               { id: "timeline", title: "Timeline" },
@@ -78,7 +77,6 @@ const Navbar = ({ toggleSidebar }) => {
             </button>
             <div className="space-y-4">
               {[
-                { id: "about", title: "About Us" },
                 { id: "problemstatement", title: "Problem Statement" },
                 { id: "criteria", title: "Criteria" },
                 { id: "timeline", title: "Timeline" },

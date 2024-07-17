@@ -1,18 +1,17 @@
 import React from "react";
 import Hero from "./pages/Hero";
 import Button from "./pages/Button";
-import About from "./pages/About";
 import ProblemStatement from "./pages/ProblemStatement";
 import Criteria from "./pages/Criteria";
 import Timeline from "./pages/timeline/Timeline";
 import Partners from "./pages/Partners";
 import Faq from "./pages/Faq";
 import ParallaxSection from "./ParallaxSection";
-import skybg from "../assets/skybg.jpg";
+// import skybg from "../assets/skybg.jpg";
 import { images } from "../Data";
+import landscapesky from "../assets/landscapesky.jpg";
 
 const sections = [
-  { id: "about", title: "About Us" },
   { id: "problemstatement", title: "Problem Statement" },
   { id: "criteria", title: "Criteria" },
   { id: "timeline", title: "Timeline" },
@@ -35,11 +34,6 @@ const Content = () => {
         <div className="container mx-auto px-4 space-y-8 rounded">
           {sections.map((section, index) => (
             <React.Fragment key={section.id}>
-              {section.id === "about" && (
-                <div id="about">
-                  <About />
-                </div>
-              )}
               {section.id === "criteria" && (
                 <div id="criteria">
                   <Criteria />
@@ -61,7 +55,7 @@ const Content = () => {
                 </div>
               )}
               {section.id === "problemstatement" && (
-                <ParallaxSection image={skybg}>
+                <ParallaxSection image={landscapesky}>
                   <div id="problemstatement">
                     <ProblemStatement />
                   </div>

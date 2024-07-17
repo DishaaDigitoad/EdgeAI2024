@@ -10,7 +10,7 @@ module.exports = {
         darkBlue: "#1B263B",
       },
       fontFamily: {
-        sans: ['"Roboto Serif"', "sans-serif"],
+        sans: ["Libre Franklin", '"Roboto Serif"', "sans-serif"],
       },
     },
   },
