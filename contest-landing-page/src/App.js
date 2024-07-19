@@ -4,7 +4,7 @@ import Sidebar from "./components/Sidebar";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
-import ParallaxSection from "./components/ParallaxSection";
+import mainbackground from "./assets/mainbackground.jpg";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -18,8 +18,7 @@ function App() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-bone">
-      {/* Conditional rendering based on isLoading */}
+    <div className="relative min-h-screen bg-bone ">
       {isLoading ? (
         <Loader />
       ) : (

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
+import logo from "../assets/Logo.png";
 
 const Navbar = ({ toggleSidebar }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -12,6 +13,9 @@ const Navbar = ({ toggleSidebar }) => {
     <>
       <nav className="fixed top-0 left-0 w-full z-20 bg-darkBlue">
         <div className="container mx-auto px-4 py-1 flex justify-between items-center">
+          <div className="flex items-center">
+            <img src={logo} alt="Event Logo" className="h-10 w-auto" />
+          </div>
           <div className="flex-1 flex justify-center md:justify-center space-x-4">
             {[
               { id: "problemstatement", title: "Problem Statement" },

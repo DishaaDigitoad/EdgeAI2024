@@ -14,24 +14,24 @@ const Faq = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h2 className="text-2xl font-bold mb-8 text-center">
+    <div className="mx-0 sm:mx-auto container  px-4 py-8">
+      <h2 className="text-3xl text-green-700 font-bold mb-8 text-center">
         Frequently Asked Questions
       </h2>
-      <div className="space-y-4">
+      <div className="space-y-6">
         {faqs.map((faq, index) => (
-          <div key={index} className="bg-white shadow-md rounded-lg p-6">
+          <div key={index} className="bg-[#E6F4EA] shadow-md rounded-lg p-7">
             <div
               className="flex justify-between items-center cursor-pointer"
               onClick={() => toggleFAQ(index)}
             >
-              <h3 className="text-lg font-medium">{faq.question}</h3>
-              <div className="text-lg">
+              <h3 className="text-sm font-medium">{faq.question}</h3>
+              <div className="text-sm">
                 {openIndex === index ? <FaChevronUp /> : <FaChevronDown />}
               </div>
             </div>
             {openIndex === index && (
-              <div className="mt-4 text-gray-700">
+              <div className="mt-4 text-gray-700 text-sm">
                 <p>{faq.answer}</p>
               </div>
             )}

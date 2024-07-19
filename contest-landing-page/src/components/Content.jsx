@@ -6,8 +6,7 @@ import Criteria from "./pages/Criteria";
 import Timeline from "./pages/timeline/Timeline";
 import Partners from "./pages/Partners";
 import Faq from "./pages/Faq";
-import ParallaxSection from "./ParallaxSection";
-// import skybg from "../assets/skybg.jpg";
+
 import { images } from "../Data";
 import landscapesky from "../assets/landscapesky.jpg";
 
@@ -23,7 +22,7 @@ const Content = () => {
   return (
     <>
       <Hero images={images} />
-      <div className="container mx-auto px-4 space-y-8 rounded">
+      <div className="sm:container my-0 mx-0 container space-y-8 rounded">
         <div className="flex justify-center mt-4">
           <Button
             text="Register now"
@@ -55,11 +54,9 @@ const Content = () => {
                 </div>
               )}
               {section.id === "problemstatement" && (
-                <ParallaxSection image={landscapesky}>
-                  <div id="problemstatement">
-                    <ProblemStatement />
-                  </div>
-                </ParallaxSection>
+                <div id="problemstatement">
+                  <ProblemStatement />
+                </div>
               )}
             </React.Fragment>
           ))}

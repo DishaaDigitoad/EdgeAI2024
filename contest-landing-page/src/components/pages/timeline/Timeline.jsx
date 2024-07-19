@@ -1,43 +1,95 @@
 import React from "react";
-import { contestFlow } from "../../../Data";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import "./timeline.css";
 
 const Timeline = () => {
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
-      <h2 className="text-3xl font-bold text-center mb-8 text-green-500">
-        Contest Flow
-      </h2>
-      <div className="relative border-l border-gray-200 pl-6 space-y-12 overflow-x-auto">
-        {contestFlow.map((stage, index) => (
-          <div key={index} className="relative mb-8">
-            <div className="absolute -left-4 top-0 w-8 h-8 bg-green-500 rounded-full border-4 border-white"></div>
-            <div className="ml-10 p-4 bg-gray-100 rounded-lg shadow-md">
-              <h3 className="text-2xl font-semibold mb-2 text-gray-700">
-                {stage.stage}
-              </h3>
-              {stage.startDate && (
-                <p className="text-gray-600">
-                  <span className="font-semibold">Start Date:</span>{" "}
-                  {stage.startDate}
-                </p>
-              )}
-              {stage.endDate && (
-                <p className="text-gray-600">
-                  <span className="font-semibold">End Date:</span>{" "}
-                  {stage.endDate}
-                </p>
-              )}
-              {stage.date && (
-                <p className="text-gray-600">
-                  <span className="font-semibold">Date:</span> {stage.date}
-                </p>
-              )}
-              <p className="text-gray-600 mt-4">{stage.outcomes}</p>
-            </div>
+    <>
+      <h1 className="text-3xl text-green-700 sm:text-3xl font-extrabold mb-8 text-center uppercase tracking-wide">
+        Timeline
+      </h1>
+      <VerticalTimeline>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="July 20th, 2024 - August 5th, 2024"
+          iconStyle={{ background: "#5DBA47", color: "#fff" }}
+          contentStyle={{ background: "#E6F4EA", color: "#000" }}
+        >
+          <div className="p-4 sm:p-6 ">
+            <h3 className="vertical-timeline-element-title text-xl font-bold">
+              Proposal on Problem Statement
+            </h3>
+            <p className="text-sm sm:text-base font-normal text-justify">
+              Participants will
+              <span className="text-green-700">
+                {" "}
+                submit detailed project proposals that include abstract
+                methodologies, relevance to Edge AI, and potential impact.
+              </span>{" "}
+              The selection process will identify the top-notch proposals based
+              on originality, relevance to Edge AI, and potential impact.
+            </p>
           </div>
-        ))}
-      </div>
-    </div>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work text-xl font-bold"
+          date="August 15th, 2024 - September 30th, 2024"
+          iconStyle={{ background: "#5DBA47", color: "#fff" }}
+          contentStyle={{ background: "#E6F4EA", color: "#000" }}
+        >
+          <div className="p-4 sm:p-6 ">
+            <h3 className="vertical-timeline-element-title text-xl font-bold">
+              Development of Initial Prototypes and Presentation
+            </h3>
+            <p className="text-sm sm:text-base font-normal">
+              <span className="text-green-700">
+                The shortlisted teams from Stage 1 will embark on developing
+                initial prototypes.{" "}
+              </span>
+              Assessment will focus on evaluating the progress and functionality
+              of these prototypes, narrowing down to the top teams based on
+              initial evaluations. The top teams will then proceed to deliver
+              detailed online presentations showcasing their prototypes and
+              technical approaches.{" "}
+              <span className="text-green-700">
+                Evaluation criteria will include project-based technical
+                content, innovation, problem-solving approach, and application
+                potential.
+              </span>
+            </p>
+          </div>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="October 2024 (Exact dates TBD)"
+          iconStyle={{ background: "#5DBA47", color: "#fff" }}
+          contentStyle={{ background: "#E6F4EA", color: "#000" }}
+        >
+          <div className="p-4 sm:p-6 ">
+            <h3 className="vertical-timeline-element-title text-xl font-bold">
+              Submission of Polished Final Prototypes
+            </h3>
+            <p className="text-sm sm:text-base font-normal text-justify">
+              Teams will submit polished final versions of their prototypes
+              along with detailed reports.{" "}
+              <span className="text-green-700">
+                The final evaluation will determine the top 10 teams based on
+                prototype performance and innovation.
+              </span>
+              Winners will be announced, and awards and recognition will be
+              distributed to the top teams for their achievements in advancing
+              Edge AI solutions.
+            </p>
+          </div>
+        </VerticalTimelineElement>
+      </VerticalTimeline>
+    </>
   );
 };
 
