@@ -25,13 +25,13 @@ const Faq = () => {
               className="flex justify-between items-center cursor-pointer"
               onClick={() => toggleFAQ(index)}
             >
-              <h3 className="text-sm font-medium">{faq.question}</h3>
-              <div className="text-sm">
+              <h3 className="text-md font-semibold">{faq.question}</h3>
+              <div className="text-md font-semibold">
                 {openIndex === index ? <FaChevronUp /> : <FaChevronDown />}
               </div>
             </div>
             {openIndex === index && (
-              <div className="mt-4 text-gray-700 text-sm">
+              <div className="mt-4 text-gray-700 text-md font-bold">
                 <p>{faq.answer}</p>
               </div>
             )}

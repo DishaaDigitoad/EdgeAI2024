@@ -21,15 +21,9 @@ const Content = () => {
   return (
     <>
       <Hero images={images} />
-      <div className="sm:container my-0 mx-0 container space-y-8 rounded">
-        <div className="flex justify-center mt-4">
-          <Button
-            text="Register now"
-            link="https://forms.gle/GeCCGATNAbi8ke728"
-            className="justify-center"
-          />
-        </div>
-        <div className="container mx-auto px-4 space-y-8 rounded">
+      
+      <div className="px-4 sm:px-5 py-8 space-y-8 rounded mx-0 sm:mx-auto">
+        <div className="mx-auto px-4 space-y-8 rounded">
           {sections.map((section, index) => (
             <React.Fragment key={section.id}>
               {section.id === "criteria" && (

@@ -12,7 +12,7 @@ const Partners = () => {
           <img
             src={STM}
             alt="Partner logo"
-            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl transition-transform duration-300 ease-in-out transform hover:scale-110"
+            className="w-full max-w-xs sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm transition-transform duration-300 ease-in-out transform hover:scale-110"
           />
         </a>
       </div>

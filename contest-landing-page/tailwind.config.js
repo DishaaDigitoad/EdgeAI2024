@@ -7,10 +7,11 @@ module.exports = {
       colors: {
         bone: "#F7FBF9",
         digiGreen: "#5ABB47",
-        darkBlue: "#1B263B",
+        darkBlue: "#141D2A",
+         'dark-green': '#004d00',
       },
       fontFamily: {
-        sans: ["Libre Franklin", '"Roboto Serif"', "sans-serif"],
+        sans: ["Open Sans","Libre Franklin", '"Roboto Serif"', "sans-serif"],
       },
     },
   },

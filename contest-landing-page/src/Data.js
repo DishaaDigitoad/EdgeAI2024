@@ -1,4 +1,4 @@
-import STM from "./assets/STM.png";
+
 
 import heroimagelow from "./assets/heroimage.png";
 
@@ -40,11 +40,12 @@ export const criteria = [
     title: "ST Micro controller Board Selection:",
     description:
       "Teams must manually specify the type of ST board they have chosen to use for their project while registration.",
+      image:{}
   },
   {
     title: "Team Composition:",
     description:
-      "Each team must consist of a minimum of 3 members and a maximum of 4 members.",
+      "Each team must consist of a minimum of 2 members and a maximum of 4 members.",
   },
   {
     title: "Passion for Innovation:",

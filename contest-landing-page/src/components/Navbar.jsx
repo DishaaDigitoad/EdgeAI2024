@@ -8,13 +8,15 @@ const Navbar = ({ toggleSidebar }) => {
   const handleSidebarToggle = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
-
+  const handleLogoClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <>
       <nav className="fixed top-0 left-0 w-full z-20 bg-darkBlue">
         <div className="container mx-auto px-4 py-1 flex justify-between items-center">
           <div className="flex items-center">
-            <img src={logo} alt="Event Logo" className="h-10 w-auto" />
+            <img src={logo} alt="Event Logo" className="h-14 w-auto cursor-pointer" onClick={handleLogoClick} />
           </div>
           <div className="flex-1 flex justify-center md:justify-center space-x-4">
             {[

@@ -9,24 +9,23 @@ import "./timeline.css";
 const Timeline = () => {
   return (
     <>
-      <h1 className="text-3xl text-green-700 sm:text-3xl font-extrabold mb-8 text-center uppercase tracking-wide">
+       <h2 className="text-3xl font-bold text-center mb-8 text-green-700">
         Timeline
-      </h1>
+      </h2>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="July 20th, 2024 - August 5th, 2024"
-          iconStyle={{ background: "#5DBA47", color: "#fff" }}
+          date={<span className="text-lg text-[#235f16] sm:text-xl md:text-2xl font-bold">{"July 27th, 2024 - August 9th, 2024"}</span>}
+          iconStyle={{ background: "#235f16", color: "#fff" }}
           contentStyle={{ background: "#E6F4EA", color: "#000" }}
         >
-          <div className="p-4 sm:p-6 ">
-            <h3 className="vertical-timeline-element-title text-xl font-bold">
-              Proposal on Problem Statement
+          <div className="p-4 sm:p-6">
+            <h3 className="vertical-timeline-element-title text-lg sm:text-xl md:text-2xl font-bold">
+              Stage I: Registration and Proposal Submission on Problem Statement
             </h3>
-            <p className="text-sm sm:text-base font-normal text-justify">
-              Participants will
+            <p className="text-sm sm:text-base font-normal mt-2">
+              Participants will{" "}
               <span className="text-green-700">
-                {" "}
                 submit detailed project proposals that include abstract
                 methodologies, relevance to Edge AI, and potential impact.
               </span>{" "}
@@ -37,20 +36,20 @@ const Timeline = () => {
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
-          className="vertical-timeline-element--work text-xl font-bold"
-          date="August 15th, 2024 - September 30th, 2024"
-          iconStyle={{ background: "#5DBA47", color: "#fff" }}
+          className="vertical-timeline-element--work"
+          date={<span className="text-lg text-[#235f16] sm:text-xl md:text-2xl font-bold">{"August 17th, 2024 - September 17th, 2024"}</span>}
+          iconStyle={{ background: "#235f16", color: "#fff" }}
           contentStyle={{ background: "#E6F4EA", color: "#000" }}
         >
-          <div className="p-4 sm:p-6 ">
-            <h3 className="vertical-timeline-element-title text-xl font-bold">
-              Development of Initial Prototypes and Presentation
+          <div className="p-4 sm:p-6">
+            <h3 className="vertical-timeline-element-title text-lg sm:text-xl md:text-2xl font-bold">
+              Stage II: Development of Initial Prototypes and Presentation
             </h3>
-            <p className="text-sm sm:text-base font-normal">
+            <p className="text-sm sm:text-base font-normal mt-2">
               <span className="text-green-700">
                 The shortlisted teams from Stage 1 will embark on developing
-                initial prototypes.{" "}
-              </span>
+                initial prototypes.
+              </span>{" "}
               Assessment will focus on evaluating the progress and functionality
               of these prototypes, narrowing down to the top teams based on
               initial evaluations. The top teams will then proceed to deliver
@@ -67,21 +66,21 @@ const Timeline = () => {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="October 2024 (Exact dates TBD)"
-          iconStyle={{ background: "#5DBA47", color: "#fff" }}
+          date={<span className="text-lg text-[#235f16] sm:text-xl md:text-2xl font-bold">{"October 4th, 2024"}</span>}
+          iconStyle={{ background: "#235f16", color: "#fff" }}
           contentStyle={{ background: "#E6F4EA", color: "#000" }}
         >
-          <div className="p-4 sm:p-6 ">
-            <h3 className="vertical-timeline-element-title text-xl font-bold">
-              Submission of Polished Final Prototypes
+          <div className="p-4 sm:p-6">
+            <h3 className="vertical-timeline-element-title text-lg sm:text-xl md:text-2xl font-bold">
+              Stage III: Submission of Polished Final Prototypes
             </h3>
-            <p className="text-sm sm:text-base font-normal text-justify">
+            <p className="text-sm sm:text-base font-normal mt-2">
               Teams will submit polished final versions of their prototypes
               along with detailed reports.{" "}
               <span className="text-green-700">
                 The final evaluation will determine the top 10 teams based on
                 prototype performance and innovation.
-              </span>
+              </span>{" "}
               Winners will be announced, and awards and recognition will be
               distributed to the top teams for their achievements in advancing
               Edge AI solutions.

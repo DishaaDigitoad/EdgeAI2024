@@ -10,10 +10,10 @@ const Criteria = () => {
       <div className="space-y-11">
         {criteria.map((criterion, index) => (
           <div key={index} className="p-4 bg-[#E6F4EA] rounded-lg shadow-md">
-            <h3 className="text-l font-semibold text-gray-800 mb-2">
+            <h3 className="text-lg font-semibold text-gray-800 mb-2">
               {criterion.title}
             </h3>
-            <p className="text-gray-600 text-sm">{criterion.description}</p>
+            <p className="text-black text-md font-semibold">{criterion.description}</p>
           </div>
         ))}
       </div>

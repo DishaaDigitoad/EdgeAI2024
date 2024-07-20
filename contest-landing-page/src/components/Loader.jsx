@@ -1,17 +1,14 @@
 import React from "react";
-import DigiToad from "../assets/DigiToad.png";
+import loaderLogo from "../assets/loaderlogo.jpg";
 
 const Loader = () => {
   return (
-    <div className="flex justify-center items-center h-screen">
-      <div className="relative">
-        <img
-          src={DigiToad}
-          alt="Loading"
-          className="absolute inset-0 object-cover h-24 w-24 md:h-32 md:w-32 lg:h-40 lg:w-40 z-10"
-        />
-        <div className="animate-spin rounded-full h-24 w-24 md:h-32 md:w-32 lg:h-40 lg:w-40 border-t-4 border-b-4 border-green-500"></div>
-      </div>
+    <div className="flex justify-center items-center h-screen relative">
+      <img 
+        src={loaderLogo} 
+        alt="Loading" 
+        className="w-1/2 h-auto max-w-xs sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/4 rounded-full"
+      />
     </div>
   );
 };
