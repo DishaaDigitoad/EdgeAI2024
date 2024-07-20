@@ -22,7 +22,7 @@
     "swiper": "^11.1.5",
     "web-vitals": "^2.1.4"
   },
- "homepage": "https://DishaaDigitoad.github.io/Edge-AI-2024",
+ "homepage": "https://DishaaDigitoad.github.io/EdgeAI2024",
 
   "scripts": {
     "start": "cross-env HOST=0.0.0.0 react-scripts start",
