@@ -1,5 +1,5 @@
 import React from "react";
-import { partners } from "../../Data";
+import STM from "../../assets/STM.png";
 
 const Partners = () => {
   return (
@@ -7,17 +7,14 @@ const Partners = () => {
       <h2 className="text-3xl text-green-700 font-semibold text-center mb-8">
         In Partnership With
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 justify-center items-center p-4">
-        {partners.map((partner, index) => (
-          <div key={index} className="flex justify-center m-4">
-            <img
-              src={partner.logo}
-              alt="Partner logo"
-              className="max-w-full h-auto"
-              loading="lazy"
-            />
-          </div>
-        ))}
+      <div className="flex justify-center items-center">
+        <a href="https://www.st.com/" target="_blank" rel="noopener noreferrer">
+          <img
+            src={STM}
+            alt="Partner logo"
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl transition-transform duration-300 ease-in-out transform hover:scale-110"
+          />
+        </a>
       </div>
     </div>
   );

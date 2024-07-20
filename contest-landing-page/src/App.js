@@ -4,7 +4,6 @@ import Sidebar from "./components/Sidebar";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
-import mainbackground from "./assets/mainbackground.jpg";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);

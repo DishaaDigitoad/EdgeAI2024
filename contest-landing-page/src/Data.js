@@ -1,10 +1,5 @@
 import STM from "./assets/STM.png";
-import NI from "./assets/NI.png";
-import Digilent from "./assets/Digilent.png";
-import IS from "./assets/IS.png";
-import VT from "./assets/VT.png";
-import Landscape from "./assets/landscapesky.jpg";
-import heroimage from "./assets/heroimage.png";
+
 import heroimagelow from "./assets/heroimage.png";
 
 export const faqs = [
@@ -37,8 +32,6 @@ export const faqs = [
       "Winners are determined based on the evaluation of final prototypes, focusing on performance, innovation, and market potential.",
   },
 ];
-
-export const partners = [{ logo: STM }];
 
 export const images = [heroimagelow];
 

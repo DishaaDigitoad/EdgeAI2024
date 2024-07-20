@@ -8,7 +8,6 @@ import Partners from "./pages/Partners";
 import Faq from "./pages/Faq";
 
 import { images } from "../Data";
-import landscapesky from "../assets/landscapesky.jpg";
 
 const sections = [
   { id: "problemstatement", title: "Problem Statement" },
