@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Edge-AI-2024/static/css/main.69468a40.css",
-    "main.js": "/Edge-AI-2024/static/js/main.11c30743.js",
-    "static/js/453.8c7d777e.chunk.js": "/Edge-AI-2024/static/js/453.8c7d777e.chunk.js",
-    "static/media/statement.jpg": "/Edge-AI-2024/static/media/statement.eeda296de7e03cad5fe0.jpg",
-    "static/media/heroimage.png": "/Edge-AI-2024/static/media/heroimage.a928df0417129e06d8c4.png",
-    "static/media/Logo.png": "/Edge-AI-2024/static/media/Logo.aa80b89aad1c8b2285f4.png",
-    "static/media/loaderlogo.jpg": "/Edge-AI-2024/static/media/loaderlogo.a6491d99663091453653.jpg",
-    "static/media/STM.png": "/Edge-AI-2024/static/media/STM.e3a9b4c43498cf14792e.png",
-    "index.html": "/Edge-AI-2024/index.html",
-    "main.69468a40.css.map": "/Edge-AI-2024/static/css/main.69468a40.css.map",
-    "main.11c30743.js.map": "/Edge-AI-2024/static/js/main.11c30743.js.map",
-    "453.8c7d777e.chunk.js.map": "/Edge-AI-2024/static/js/453.8c7d777e.chunk.js.map"
+    "main.css": "/EdgeAI2024/static/css/main.69468a40.css",
+    "main.js": "/EdgeAI2024/static/js/main.24659fd8.js",
+    "static/js/453.8c7d777e.chunk.js": "/EdgeAI2024/static/js/453.8c7d777e.chunk.js",
+    "static/media/statement.jpg": "/EdgeAI2024/static/media/statement.eeda296de7e03cad5fe0.jpg",
+    "static/media/heroimage.png": "/EdgeAI2024/static/media/heroimage.a928df0417129e06d8c4.png",
+    "static/media/Logo.png": "/EdgeAI2024/static/media/Logo.aa80b89aad1c8b2285f4.png",
+    "static/media/loaderlogo.jpg": "/EdgeAI2024/static/media/loaderlogo.a6491d99663091453653.jpg",
+    "static/media/STM.png": "/EdgeAI2024/static/media/STM.e3a9b4c43498cf14792e.png",
+    "index.html": "/EdgeAI2024/index.html",
+    "main.69468a40.css.map": "/EdgeAI2024/static/css/main.69468a40.css.map",
+    "main.24659fd8.js.map": "/EdgeAI2024/static/js/main.24659fd8.js.map",
+    "453.8c7d777e.chunk.js.map": "/EdgeAI2024/static/js/453.8c7d777e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.69468a40.css",
-    "static/js/main.11c30743.js"
+    "static/js/main.24659fd8.js"
   ]
 }
