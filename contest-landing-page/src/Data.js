@@ -1,5 +1,3 @@
-
-
 import heroimagelow from "./assets/heroimage.png";
 
 export const faqs = [
@@ -37,10 +35,10 @@ export const images = [heroimagelow];
 
 export const criteria = [
   {
-    title: "ST Micro controller Board Selection:",
+    title: "STMicrocontroller Board Selection:",
     description:
       "Teams must manually specify the type of ST board they have chosen to use for their project while registration.",
-      image:{}
+    image: {},
   },
   {
     title: "Team Composition:",

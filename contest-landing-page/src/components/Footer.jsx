@@ -25,9 +25,13 @@ const Footer = () => {
               Karnataka (India)
               <br />
               <br />
-              Email: sales@digitoadtech.com
+              Email: support@digitoadtech.com
               <br />
-              Phone: +91 636 238 7840
+              Phone No:
+              <br />
+              +91 821 779 1624
+              <br />
+              +91 938 096 5171
             </p>
           </div>
 
@@ -85,7 +89,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-lg font-semibold hover:underline"
               >
-                DigiToad Technologies pvt. ltd.
+                DigiToad Technologies Pvt. Ltd.
               </a>
               <p className="mt-2">
                 &copy; 2024 Edge AI Contest. All rights reserved.
