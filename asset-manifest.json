@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/EdgeAI2024/static/css/main.ad449c4f.css",
-    "main.js": "/EdgeAI2024/static/js/main.d7d72403.js",
-    "static/js/453.8c7d777e.chunk.js": "/EdgeAI2024/static/js/453.8c7d777e.chunk.js",
-    "static/media/statement.jpg": "/EdgeAI2024/static/media/statement.af2622e3fffca69ce889.jpg",
-    "static/media/heroimage.png": "/EdgeAI2024/static/media/heroimage.a928df0417129e06d8c4.png",
-    "static/media/Logo.png": "/EdgeAI2024/static/media/Logo.aa80b89aad1c8b2285f4.png",
-    "static/media/loaderlogo.jpg": "/EdgeAI2024/static/media/loaderlogo.a6491d99663091453653.jpg",
-    "static/media/STM.png": "/EdgeAI2024/static/media/STM.e3a9b4c43498cf14792e.png",
-    "index.html": "/EdgeAI2024/index.html",
-    "main.ad449c4f.css.map": "/EdgeAI2024/static/css/main.ad449c4f.css.map",
-    "main.d7d72403.js.map": "/EdgeAI2024/static/js/main.d7d72403.js.map",
-    "453.8c7d777e.chunk.js.map": "/EdgeAI2024/static/js/453.8c7d777e.chunk.js.map"
+    "main.css": "/static/css/main.ad449c4f.css",
+    "main.js": "/static/js/main.0e07753f.js",
+    "static/js/453.8c7d777e.chunk.js": "/static/js/453.8c7d777e.chunk.js",
+    "static/media/statement.jpg": "/static/media/statement.af2622e3fffca69ce889.jpg",
+    "static/media/heroimage.png": "/static/media/heroimage.a928df0417129e06d8c4.png",
+    "static/media/Logo.png": "/static/media/Logo.aa80b89aad1c8b2285f4.png",
+    "static/media/loaderlogo.jpg": "/static/media/loaderlogo.a6491d99663091453653.jpg",
+    "static/media/STM.png": "/static/media/STM.e3a9b4c43498cf14792e.png",
+    "index.html": "/index.html",
+    "main.ad449c4f.css.map": "/static/css/main.ad449c4f.css.map",
+    "main.0e07753f.js.map": "/static/js/main.0e07753f.js.map",
+    "453.8c7d777e.chunk.js.map": "/static/js/453.8c7d777e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ad449c4f.css",
-    "static/js/main.d7d72403.js"
+    "static/js/main.0e07753f.js"
   ]
 }
