@@ -22,9 +22,7 @@
     "swiper": "^11.1.5",
     "web-vitals": "^2.1.4"
   },
-
-"homepage": "https://edgeai2024.site",
-
+  "homepage": "https://edgeai2024.site",
   "scripts": {
     "start": "cross-env HOST=0.0.0.0 react-scripts start",
     "build": "react-scripts build",
@@ -50,9 +48,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-
   },
- 
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "gh-pages": "^6.1.1",

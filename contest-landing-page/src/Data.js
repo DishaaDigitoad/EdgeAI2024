@@ -3,29 +3,29 @@ import heroimagelow from "./assets/heroimage.png";
 export const faqs = [
   {
     question:
-      "Is there a registration fee to participate in the Edge AI Design Contest?",
-    answer: "No, registration for the contest is free of charge.",
+      "Is there a registration fee to participate in the Edge AI Innovation Challenge 2024?",
+    answer: "No, registration for the challenge is free of charge.",
   },
   {
     question:
       "Can teams submit proposals and prototypes developed in previous competitions or projects?",
     answer:
-      "No, submissions must be original and developed specifically for the Edge AI Design Contest 2024.",
+      "No, submissions must be original and developed specifically for the Edge AI Innovation Challenge 2024.",
   },
   {
     question:
-      "Are there restrictions on the size or complexity of prototypes developed in the contest?",
+      "Are there restrictions on the size or complexity of prototypes developed in the challenge?",
     answer:
       "No specific restrictions are imposed, but prototypes should demonstrate practical applications and feasibility within industrial contexts.",
   },
   {
     question:
-      "What recognition do participants receive at each stage of the contest?",
+      "What recognition do participants receive at each stage of the challenge?",
     answer:
       "Certificates will be issued at each stage to acknowledge participants contributions and achievements in advancing Edge AI technology.",
   },
   {
-    question: "How are winners determined in the contest?",
+    question: "How are winners determined in the challenge?",
     answer:
       "Winners are determined based on the evaluation of final prototypes, focusing on performance, innovation, and market potential.",
   },
@@ -35,7 +35,7 @@ export const images = [heroimagelow];
 
 export const criteria = [
   {
-    title: "STMicrocontroller Board Selection:",
+    title: "STM32 Microcontroller Board Selection:",
     description:
       "Teams must manually specify the type of ST board they have chosen to use for their project while registration.",
     image: {},
