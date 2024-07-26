@@ -1,42 +1,24 @@
-import React, { useEffect, useState } from "react";
-import statement from "../../assets/statement.jpg";
+import React from "react";
+import statement from "../../assets/statement.png";
 
 const ProblemStatement = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const element = document.querySelector(".problem-statement");
-      const rect = element.getBoundingClientRect();
-      if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-        setIsVisible(true);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Check if already in view
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <div
       className="problem-statement flex flex-col md:flex-row items-center justify-center bg-[#E6F4EA] shadow-md rounded-lg p-8 md:p-12"
-      style={{ maxWidth: "90vw", margin: "0 auto" }}
+      style={{ maxWidth: "1200px", margin: "0 auto" }}
     >
       <div className="flex flex-col justify-center items-center md:w-1/2">
-        <p className="text-base md:text-lg text-black font-semibold mb-8 text-center md:text-left">
+        <p className="text-base md:text-lg text-black mb-8 text-center md:text-left">
           <span className="block mb-4">
-            <span className="text-xl">In</span> response to the accelerating
-            demand for integrated AI solutions across industries such as
-            Automotive, Energy, Aerospace, Semiconductor, Wireless, and Academic
-            Research,
+            In response to the accelerating demand for integrated AI solutions
+            across industries such as Automotive, Energy, Aerospace,
+            Semiconductor, Wireless, and Academic Research,
           </span>
-          <span className="block mb-4 text-green-700 text-xl font-semibold">
+          <span className="block mb-4 text-green-700 text-xl">
             Participants are invited to leverage their passion for innovation
             and engineering expertise to create solutions
           </span>
-          <span className="block mb-4 text-black font-semibold">
+          <span className="block mb-4 text-black">
             that not only meet current industry needs but also pave the way for
             future advancements in embedded AI technology.
           </span>

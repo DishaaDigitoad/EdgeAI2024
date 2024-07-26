@@ -92,7 +92,7 @@ const Footer = () => {
                 DigiToad Technologies Pvt. Ltd.
               </a>
               <p className="mt-2">
-                &copy; 2024 Edge AI Contest. All rights reserved.
+                &copy; 2024 Edge AI Innovation Challenge. All rights reserved.
               </p>
             </div>
           </div>

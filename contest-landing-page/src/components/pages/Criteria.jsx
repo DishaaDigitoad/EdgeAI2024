@@ -13,7 +13,7 @@ const Criteria = () => {
             <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-black mb-2">
               {criterion.title}
             </h3>
-            <p className="text-md text-green-800 font-normal">
+            <p className="text-md text-green-700 font-normal">
               {criterion.description}
             </p>
           </div>

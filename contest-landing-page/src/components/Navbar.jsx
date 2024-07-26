@@ -2,6 +2,7 @@ import { useState } from "react";
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 import logo from "../assets/Logo.png";
+import DigiLogo from "../assets/DigitoadLogo.png";
 
 const Navbar = ({ toggleSidebar }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -11,11 +12,21 @@ const Navbar = ({ toggleSidebar }) => {
   const handleLogoClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  const handleTopLogoClick = () => {
+    window.location.href = "https://www.digitoadtech.com/";
+  };
   return (
     <>
       <nav className="fixed top-0 left-0 w-full z-20 bg-darkBlue">
-        <div className="container mx-auto px-4 py-1 flex justify-between items-center">
-          <div className="flex items-center">
+        <div className="container mx-auto px-4 py-1 flex items-center">
+          <div className="flex items-center flex-1">
+            <img
+              src={DigiLogo}
+              alt="Company Logo"
+              className="h-11 w-auto cursor-pointer"
+              onClick={handleTopLogoClick}
+            />
+            <div className="h-14 w-1 mx-4 bg-white opacity-70"></div>
             <img
               src={logo}
               alt="Event Logo"
@@ -23,11 +34,11 @@ const Navbar = ({ toggleSidebar }) => {
               onClick={handleLogoClick}
             />
           </div>
-          <div className="flex-1 flex justify-center md:justify-center space-x-4">
+          <div className="hidden lg-custom:flex lg-custom:items-center lg-custom:justify-center space-x-4 flex-1">
             {[
               { id: "problemstatement", title: "Problem Statement" },
-              { id: "criteria", title: "Criteria" },
               { id: "timeline", title: "Timeline" },
+              { id: "criteria", title: "Criteria" },
               { id: "faq", title: "FAQ" },
               { id: "partners", title: "Partner" },
             ].map((item) => (
@@ -36,14 +47,17 @@ const Navbar = ({ toggleSidebar }) => {
                 to={item.id}
                 smooth={true}
                 duration={500}
-                className="cursor-pointer px-3 py-2 bg-dark-blue bg-opacity-50 rounded text-white hover:bg-opacity-75 hidden md:block"
+                className="cursor-pointer px-3 py-2 bg-dark-blue bg-opacity-50 rounded text-white hover:underline"
                 offset={-70}
               >
                 {item.title}
               </ScrollLink>
             ))}
           </div>
-          <button className="md:hidden" onClick={handleSidebarToggle}>
+          <button
+            className="lg-custom:hidden absolute right-4 top-1/2 transform -translate-y-1/2"
+            onClick={handleSidebarToggle}
+          >
             <svg
               className="w-6 h-6 text-white"
               fill="none"
@@ -89,8 +103,8 @@ const Navbar = ({ toggleSidebar }) => {
             <div className="space-y-4">
               {[
                 { id: "problemstatement", title: "Problem Statement" },
-                { id: "criteria", title: "Criteria" },
                 { id: "timeline", title: "Timeline" },
+                { id: "criteria", title: "Criteria" },
                 { id: "faq", title: "FAQ" },
                 { id: "partners", title: "Partner" },
               ].map((item) => (

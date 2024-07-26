@@ -8,10 +8,13 @@ module.exports = {
         bone: "#F7FBF9",
         digiGreen: "#5ABB47",
         darkBlue: "#141D2A",
-         'dark-green': '#004d00',
+        "dark-green": "#004d00",
       },
       fontFamily: {
-        sans: ["Open Sans","Libre Franklin", '"Roboto Serif"', "sans-serif"],
+        sans: ["Open Sans", "Libre Franklin", '"Roboto Serif"', "sans-serif"],
+      },
+      screens: {
+        "lg-custom": "1080px",
       },
     },
   },
