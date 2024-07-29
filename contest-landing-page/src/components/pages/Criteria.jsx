@@ -8,6 +8,24 @@ const Criteria = () => {
         Eligibility Criteria
       </h2>
       <div className="space-y-11">
+        <div className="p-4 bg-[#E6F4EA] rounded-lg shadow-md">
+          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-black mb-2">
+            STMicroelectronics Edge AI Suite Selection:
+          </h3>
+          <p className="text-md text-green-700 font-normal">
+            The proposal for solutions should highlight the incorporation of{" "}
+            <a
+              href="https://stm32ai.st.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              STMicroelectronics Edge AI Suite
+            </a>
+            , which includes STM32 Hardware, NanoEdge AI Studio, Cube AI, etc.,
+            at the time of registration.
+          </p>
+        </div>
         {criteria.map((criterion, index) => (
           <div key={index} className="p-4 bg-[#E6F4EA] rounded-lg shadow-md">
             <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-black mb-2">

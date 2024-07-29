@@ -29,17 +29,16 @@ export const faqs = [
     answer:
       "Winners are determined based on the evaluation of final prototypes, focusing on performance, innovation, and market potential.",
   },
+  {
+    question: "What should teams do if they do not have development boards?",
+    answer:
+      "Shortlisted teams can utilize the STM32 development kits available with the department labs",
+  },
 ];
 
 export const images = [heroimagelow];
 
 export const criteria = [
-  {
-    title: "STM32 Microcontroller Board Selection:",
-    description:
-      "Teams must manually specify the type of ST board they have chosen to use for their project while registration.",
-    image: {},
-  },
   {
     title: "Team Composition:",
     description:
@@ -51,7 +50,7 @@ export const criteria = [
       "We encourage teams to demonstrate a passion for innovation in their proposed solutions and problem-solving approaches.",
   },
   {
-    title: "All Years of Engineering Students(UG/PG):",
+    title: "All Years of Engineering Students across India(UG/PG):",
     description:
       "The challenge is open to students from all years of engineering programs, fostering interdisciplinary collaboration and creativity.",
   },

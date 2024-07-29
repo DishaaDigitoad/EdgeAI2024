@@ -25,13 +25,24 @@ const Footer = () => {
               Karnataka (India)
               <br />
               <br />
-              Email: support@digitoadtech.com
+              Email:
+              <a
+                className="hover:underline"
+                href="mailto:support@digitoadtech.com"
+              >
+                {" "}
+                support@digitoadtech.com
+              </a>
               <br />
               Phone No:
               <br />
-              +91 821 779 1624
+              <a className="hover:underline" href="tel:+918217791624">
+                +91 821 779 1624
+              </a>
               <br />
-              +91 938 096 5171
+              <a className="hover:underline" href="tel:+919380965171">
+                +91 938 096 5171
+              </a>
             </p>
           </div>
 
