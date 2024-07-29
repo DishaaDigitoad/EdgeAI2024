@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.793ec067.css",
-    "main.js": "/static/js/main.aeccd35a.js",
+    "main.js": "/static/js/main.1424d017.js",
     "static/js/453.8c7d777e.chunk.js": "/static/js/453.8c7d777e.chunk.js",
+    "static/media/Hero.png": "/static/media/Hero.909b0da4aa2ffcd9c571.png",
     "static/media/statement.png": "/static/media/statement.784af7f49a8cbe48a458.png",
     "static/media/heroimage.png": "/static/media/heroimage.983bb7d699720b039a6e.png",
     "static/media/DigitoadLogo.png": "/static/media/DigitoadLogo.083869c535981b10d540.png",
@@ -10,11 +11,11 @@
     "static/media/loaderlogo.jpg": "/static/media/loaderlogo.a6491d99663091453653.jpg",
     "index.html": "/index.html",
     "main.793ec067.css.map": "/static/css/main.793ec067.css.map",
-    "main.aeccd35a.js.map": "/static/js/main.aeccd35a.js.map",
+    "main.1424d017.js.map": "/static/js/main.1424d017.js.map",
     "453.8c7d777e.chunk.js.map": "/static/js/453.8c7d777e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.793ec067.css",
-    "static/js/main.aeccd35a.js"
+    "static/js/main.1424d017.js"
   ]
 }
